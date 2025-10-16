@@ -1,0 +1,13 @@
+# Simple 5K Run Time Calculator
+
+# Ask the user for their pace per kilometer
+minutes = int(input("How many minutes per kilometer? "))
+seconds = int(input("How many seconds per kilometer? "))
+
+# Calculate total time for 5 km
+total_seconds = (minutes * 60 + seconds) * 5
+total_minutes = total_seconds // 60
+remaining_seconds = total_seconds % 60
+
+# Show the result
+print("Your 5K time will be about", int(total_minutes), "minutes and", int(remaining_seconds), "seconds.")
